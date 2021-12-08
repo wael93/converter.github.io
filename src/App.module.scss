@@ -1,0 +1,40 @@
+@import "../src/styles/themeColors.module";
+@import "../src/styles/uiTheme.module";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.unit_converter_container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 15px;
+  border-radius: 8px;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  padding: 20px 15px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.measurement_selector_input {
+  font-size: 1rem;
+  background-color: $selectBackgroundColor;
+  border: $inputBorder;
+}
+
+.formula_logo {
+  padding: 1px 3px 1.5px 3px;
+  color: $whiteFontColor;
+  background-color: $formulaLogoBackgroundColor;
+  margin: 0 8px 0 0;
+  border-radius: 2px;
+}
