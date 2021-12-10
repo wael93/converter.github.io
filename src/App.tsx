@@ -39,6 +39,11 @@ function App() {
       <div className={styles.App}>
         <div className={styles.unit_converter_container}>
           <h1 className={styles.title}>Unit Converter</h1>
+          <div data-testid="formula">
+            <span className={styles.formula_logo}>Formula</span>{" "}
+            {getFormula(unitType, unit1, unit2)}
+          </div>
+          
           <select
             data-testid="unit-type-selector"
             onChange={(e) => {
@@ -60,10 +65,10 @@ function App() {
             setErrors={setErrors}
             conversionFunctions={getConversionFunctions(unitType, unit1, unit2)}
           />
-          <div data-testid="formula">
+          {/* <div data-testid="formula">
             <span className={styles.formula_logo}>Formula</span>{" "}
             {getFormula(unitType, unit1, unit2)}
-          </div>
+          </div> */}
         </div>
       </div>
     </UnitTypeContext.Provider>
