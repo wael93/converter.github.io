@@ -1,7 +1,7 @@
-import React from 'react';
-import Text from './Text';
+// import React from 'react';
+// import Text from './Text';
 
-export default { title: 'Text' };
+// export default { title: 'Text' };
 
-export const storyName = () => <Text onClick={}/>;
+// export const storyName = () => <Text onClick={}/>;
 
